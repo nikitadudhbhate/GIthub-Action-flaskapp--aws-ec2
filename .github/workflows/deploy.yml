@@ -50,6 +50,6 @@ jobs:
           docker pull ${{ secrets.DOCKER_USERNAME }}/hello-world-flaskapp:latest
           # Run Docker Compose to recreate containers
           cd /home/ubuntu/docker
-          docker-compose down
-          docker-compose up -d --build
+          docker compose down
+          docker compose up -d --build
         EOF
