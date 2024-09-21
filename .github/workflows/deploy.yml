@@ -51,5 +51,5 @@ jobs:
           # Run Docker Compose to recreate containers
           cd /home/ubuntu/docker
           docker compose down
-          docker compose up -d --build
+          docker compose up -d 
         EOF
